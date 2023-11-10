@@ -2,7 +2,7 @@
 Welcome to our Thai Street Food Restaurant website project, where I'd like to presenting the authentic essence of Thai street food using HTML, CSS, and JavaScript.
 
 
-Street Thai Restaurant Website: 
+Street-Thai Restaurant Website: 
 This project is not just about creating a digital space for authentic Thai street food; it's a representation of my lifestyle and a celebration of the culinary treasures from my home country.
 
 Project Overview
