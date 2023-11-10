@@ -198,7 +198,7 @@ img{
     transition: .3s;
 }
 
-.nav_link:nover{
+.nav_link:hover{
     color: var(--first-color);
 }
 
@@ -296,7 +296,7 @@ img{
 }
 
 .about_description{
-    margin-botton: var(--mb-3);
+    margin-bottom: var(--mb-3);
 }
 
 .about_img{
