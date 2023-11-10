@@ -8,11 +8,11 @@
     --header-height: 3rem;
     --first-color: #952323; #E74242;
     --first-color-alt: #A73121;
-    --title-color: #F2EAD3; #FFC86D;
+    --title-color:#E74242; #F2EAD3; #FFC86D;
     --text-color: #4F4A45;
     --text-color-dark: #494947; 
     --body-color1: #A7D397;
-    --body-color2: #F5EEC8;
+    --body-color2: #F2E3DB;
     --container-color: #F8F0E5;
 
 /* font and typography */
@@ -52,7 +52,6 @@
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
-
     }
 
 }
@@ -136,7 +135,7 @@ img{
 }
 
 /* Layout */
-.bd-container {
+.bd-container{
     max-width: 960px;
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
@@ -254,8 +253,62 @@ img{
     bottom: 1.5rem;
 }
 
-/**/
+/* home style */
+.home_container {
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+}
 
+.home_title{
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.home_subtitle{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+
+.home_img{
+    width: 300px;
+    justify-self: center;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+/* About */
+.about_data{
+    text-align: center;
+}
+
+.about_description{
+    margin-botton: var(--mb-3);
+}
+
+.about_img{
+    width: 280px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+/* Services */
+ 
+
+/**/
 /**/
 
 
