@@ -1,0 +1,262 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* variables css */
+:root {
+
+    /* colors */
+    --header-height: 3rem;
+    --first-color: #952323; #E74242;
+    --first-color-alt: #A73121;
+    --title-color: #F2EAD3; #FFC86D;
+    --text-color: #4F4A45;
+    --text-color-dark: #494947; 
+    --body-color1: #A7D397;
+    --body-color2: #F5EEC8;
+    --container-color: #F8F0E5;
+
+/* font and typography */
+--body-font : 'Roboto', sans-serif;
+--biggest-font-size: 2.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
+
+/* font weight */
+--font-medium:500;
+--font-semi-bold: 600;
+
+/* Margins */
+--mb-1: .5rem;
+--mb-2: 1rem;
+--mb-3: 1.5rem;
+--mb-4: 2rem;
+--mb-5: 2.5rem;
+--mb-6: 3rem;
+
+/* z index*/
+--z-tooltip: 10;
+--z-fixed: 100;
+
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+
+    }
+
+}
+
+/*Basic set up*/
+*, ::before,::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Dark theme*/
+body.dark-theme {
+    --title-color: #F1F3F2;
+    --text-color:#C7D1CC; #D0D4CA;
+    --body-color: #252525;
+    --container-color: #27302C; #555843;
+}
+
+
+/*button Dark/Light*/
+.change-theme {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color2);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,p,ul {
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* class css */
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+}
+
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+/* Layout */
+.bd-container {
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color2);
+}
+
+/*NAV*/
+.nav {
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px)  {
+    .nav_menu{
+        position: fixed;
+        top: -100%;
+        left:0;
+        width: 100%;
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+        background-color: var(--body-color2);
+        transition: .4s;
+        box-shadow: 0 4px 4px rgba(0,0,0,.1);
+        border-radius: 0 0 1rem;
+        z-index: var(--z-fixed);
+    }
+}
+
+.nav_item {
+    margin-bottom: var(--mb-2);
+}
+
+.nav_link, .nav_logo, .nav_toggle{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.nav_logo:hover {
+    color: var(--first-color);
+}
+
+.nav_link{
+    transition: .3s;
+}
+
+.nav_link:nover{
+    color: var(--first-color);
+}
+
+.nav_toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Show Menu */
+.show-menu{
+    top: var(--header-height);
+}
+
+/* Active menu */
+.active-link {
+    color: var(--first-color)
+}
+
+/* Change background header */
+.scroll-header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* Scroll top*/
+.scrolltop {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: var(--body-color);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover {
+    background-color: var(--first-color-alt);
+}
+
+.scrolltop-icon{
+    font-size: 1.8rem;
+    color: var(--body-color2);
+}
+
+/* Show scrolltop */
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}
+
+/**/
+
+/**/
+
+
+
