@@ -306,8 +306,31 @@ img{
 }
 
 /* Services */
+.services_container{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
- 
+.services_content{
+    text-align: center;
+}
+
+.services_img{
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+}
+
+.services_title{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services_description{
+    padding: 0 1.5rem;
+}
 
 /**/
 /**/
