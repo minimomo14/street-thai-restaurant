@@ -1,5 +1,5 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* variables css */
 :root {
@@ -16,7 +16,7 @@
     --container-color: #F8F0E5;
 
 /* font and typography */
---body-font : 'Roboto', sans-serif;
+--body-font : 'Montserrat', sans-serif;
 --biggest-font-size: 2.25rem;
 --h1-font-size: 1.5rem;
 --h2-font-size: 1.25rem;
@@ -306,6 +306,7 @@ img{
 }
 
 /* Services */
+
  
 
 /**/
