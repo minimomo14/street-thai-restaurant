@@ -12,7 +12,7 @@
     --text-color: #4F4A45;
     --text-color-dark: #494947; 
     --body-color1: #A7D397;
-    --body-color2: #F2E3DB;
+    --body-color2: #FFFBF5;
     --container-color: #F8F0E5;
 
 /* font and typography */
@@ -332,7 +332,53 @@ img{
     padding: 0 1.5rem;
 }
 
-/**/
+/* Menu */
+.menu_container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.menu_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(3,74,40,.15);
+    padding: .75rem;
+}
+
+.menu_img{
+    width: 100px;
+    align-self: center;
+    margin-bottom: var(--mb-2);
+}
+
+.menu_name, .menu_price{
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.menu_name{
+    font-size: var(--normal-font-size);
+}
+
+.menu_detail, .menu_price{
+    font-size: var(--small-font-size);
+}
+
+.menu_detail{
+    margin-bottom: var(--mb-1);
+}
+
+.menu_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+}
 /**/
 
 
