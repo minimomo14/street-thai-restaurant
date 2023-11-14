@@ -56,7 +56,7 @@ window.addEventListener('scroll', scrollHeader);
 
 //scroll top function
 function scrollTop(){
-    const scrollTop = document.getElementById('scrolltop');
+    const scrollTop = document.getElementById('scroll-top');
     //when the scroll is higher than 560 viewport height, add the show scroll class to the tag
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll');
     else scrollTop.classList.remove('show-scroll')
@@ -77,7 +77,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
 
 if (selectedTheme) {
-    document.body.classList.[selectedTheme === 'dark' ? 'add' : 'remove']
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']
     (darkTheme)
     themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove']
     (iconTheme)
