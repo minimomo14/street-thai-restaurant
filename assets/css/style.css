@@ -12,7 +12,6 @@
     --title-color:#E74242;
      /* #F2EAD3; #FFC86D; */
     --text-color: #4F4A45;
-    --text-color-dark: #494947; 
     /* --body-color1: #A7D397; */
     --body-color: #FFFBF5;
     --container-color: #F8F0E5;
@@ -72,10 +71,9 @@ html {
 body.dark-theme {
     --title-color: #F1F3F2;
     --text-color:#C7D1CC;
-    --body-color: #252525;
-    --container-color: #27302C;
+    --body-color: #27302C;
+    --container-color: #252525;
 }
-
 
 /*button Dark/Light*/
 .change-theme {
@@ -91,7 +89,7 @@ body {
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color2);
+    background-color: var(--body-color);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -155,7 +153,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color2);
+    background-color: var(--body-color);
 }
 
 /*NAV*/
@@ -175,7 +173,7 @@ img{
         width: 100%;
         padding: 1.5rem 0 1rem;
         text-align: center;
-        background-color: var(--body-color2);
+        background-color: var(--body-color);
         transition: .4s;
         box-shadow: 0 4px 4px rgba(0,0,0,.1);
         border-radius: 0 0 1rem;
@@ -246,7 +244,7 @@ img{
 
 .scroll-top-icon{
     font-size: 1.8rem;
-    color: var(--body-color2);
+    color: var(--body-color);
 }
 
 /* Show scroll-top */
@@ -435,7 +433,7 @@ img{
 .footer_copy{
     text-align: center;
     font-size: var(--small-font-size);
-    color: var(--text-color-dark);
+    color: var(--text-color);
     margin-top: 3.5rem;
 }
 
