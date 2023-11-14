@@ -379,7 +379,17 @@ img{
     padding: .625rem .813rem;
     border-radius: .5rem 0 .5rem 0;
 }
-/**/
 
+
+/* Contact section*/
+.contact_container{
+    text-align: center;
+}
+
+.contact_description{
+    margin-bottom: var(--mb-3);
+}
+
+/*Footer section*/
 
 
