@@ -71,8 +71,8 @@ html {
 body.dark-theme {
     --title-color: #F1F3F2;
     --text-color:#C7D1CC;
-    --body-color: #27302C;
-    --container-color: #252525;
+    --body-color: #252525;
+    --container-color: #27302C;
 }
 
 /*button Dark/Light*/
