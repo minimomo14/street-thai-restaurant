@@ -19,7 +19,7 @@
     </a>
     <!-- header -->
     <header class="header" id="header">
-        <nav class="nav bd-container">
+        <nav class="nav ">
             <a href="#" class="nav_logo">Street Thai</a>
             <div class="nav_menu" id="nav_menu">
                 <ul class="nav_list">
@@ -44,22 +44,78 @@
     </header>
 
     <main class="main">
-
         <!-- home section starting here -->
-        <section class="home" id="home">
+        <section class="home section" id="home">
             <div class="home_container bd-container bd-grid">
                 <div class="home_data">
                     <h1 class="home_title">Thai Street Food</h1>
                     <h2 class="home_subtitle">"Spicy, Sweet, and Savory: The Palette of Thai Street Cuisine"</h2>
-                    <a href="#" class="button">View Menu</a>
+                    <a href="./index.html#menu" class="button">View Menu</a>
                 </div>
-                <img src="./assets/img/home.jpg" alt="home-image" class="home_img">
+                <h3>Experience the ambiance of street food and savor the authentic aroma of Thailand.</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/watArun.jpg" style="width:100%">
+                        <div class="text">Wat-Arun</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/floatingmarket.jpg" style="width:100%">
+                        <div class="text">Floating Market</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/padthai.jpg" style="width:100%">
+                        <div class="text">Pad Thai</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/bkkmarket.jpg" style="width:100%">
+                        <div class="text">BKK Night Market</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/toktok.jpg" style="width:100%">
+                        <div class="text">Tok Tok</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="./assets/img/slideshowImages/streetThai.jpg" style="width:100%">
+                        <div class="text">Thai Street Market</div>
+                    </div>
+
+                    <div class="mySlides fade">
+
+                        <img src="https://static.thairath.co.th/media/Dtbezn3nNUxytg04ajZ4QafH7spkIXGBHkrtU9iRGczt3M.webp"
+                            style="width:100%">
+                        <div class="text">Panang Curry is No.1 World Best Stewed Meat in 2023</div>
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
+            <!-- <img src="./assets/img/home.jpg" alt="home-image" class="home_img"> -->
+            </div>
+
         </section>
 
         <!-- about section starting here  -->
-        <section class="about section bd-container" id="about">
-            <div class="about_container bd-grid">
+        <section class="about section bd-container bd-grid" id="about">
+            <div class="about_container ">
                 <div class="about_data">
                     <span class="section-subtitle about_initial">About Us</span>
                     <h2 class="section-title about_initial">Bringing the Streets Food of Thailand to Your Table</h2>
@@ -68,9 +124,9 @@
                         energy of Thailand's streets into an unforgettable dining experience at your <br> Join us as
                         we share the rich heritage, inspirations, and delectable discoveries that make our culinary
                         adventure a celebration of authentic Thai cuisine, right in the comfort of your home.</p>
+                    <img src="./assets/img/about.jpg" alt="" class="about_img"> <br>
                     <a href="#" class="button">Explore history</a>
                 </div>
-                <img src="./assets/img/about.jpg" alt="" class="about_img">
             </div>
         </section>
 
@@ -139,13 +195,17 @@
             <div class="menu_container bd-grid">
                 <div class="menu_content">
                     <img src="./assets/img/pad-kra-praw.jpg" alt="" class="menu_img">
-                    <h3 class="menu_name">Pad-Kra-Praw</h3>
-                    <span class="menu_detail">Most popular Thai dish made with stir-fried minced meat of choice, often
-                        chicken, pork, or beef, with Thai holy basil. <br> known for its bold and aromatic flavors,
-                        typically
-                        featuring garlic, chili, and fish sauce. The name effectively represents the key ingredients and
-                        the stir-frying cooking technique commonly used in Thai cuisine. </span>
-                    <span class="menu_price">$14.99</span>
+                    <div class="menu_box">
+                        <h3 class="menu_name">Pad-Kra-Praw</h3>
+                        <span class="menu_detail">Most popular Thai dish made with stir-fried minced meat of choice,
+                            often
+                            chicken, pork, or beef, with Thai holy basil. <br> known for its bold and aromatic flavors,
+                            typically
+                            featuring garlic, chili, and fish sauce. The name effectively represents the key ingredients
+                            and
+                            the stir-frying cooking technique commonly used in Thai cuisine. </span>
+                        <span class="menu_price">$14.99</span>
+                    </div>
                     <a href="#" class="button menu_button">
                         <!-- <i class="box box-cart-alt"> -->
                         <i class="fa-solid fa-bag-shopping"></i>
@@ -154,14 +214,20 @@
 
                 <div class="menu_content">
                     <img src="./assets/img/pad-thai.jpg" alt="" class="menu_img">
-                    <h3 class="menu_name">Pad-Thai</h3>
-                    <span class="menu_detail">a classic and iconic Thai stir-fried noodle dish. It typically includes
-                        rice noodles, a combination of proteins such as shrimp or chicken, tofu, bean sprouts, peanuts,
-                        lime, and various seasonings. <br> The dish is known for its perfect balance of sweet, sour,
-                        salty,
-                        and umami flavors. "Pad Thai" is not only a popular street food dish in Thailand but also widely
-                        enjoyed and recognized around the world!.</span>
-                    <span class="menu_price">$15.99</span>
+                    <div class="menu_box">
+                        <h3 class="menu_name">Pad-Thai</h3>
+                        <span class="menu_detail">a classic and iconic Thai stir-fried noodle dish. It typically
+                            includes
+                            rice noodles, a combination of proteins such as shrimp or chicken, tofu, bean sprouts,
+                            peanuts,
+                            lime, and various seasonings. <br> The dish is known for its perfect balance of sweet, sour,
+                            salty,
+                            and umami flavors. "Pad Thai" is not only a popular street food dish in Thailand but also
+                            widely
+                            enjoyed and recognized around the world!.</span>
+                        <span class="menu_price">$15.99</span>
+                    </div>
+
                     <a href="#" class="button menu_button">
                         <!-- <i class="box box-cart-alt"> -->
                         <i class="fa-solid fa-bag-shopping"></i>
@@ -170,13 +236,17 @@
 
                 <div class="menu_content">
                     <img src="./assets/img/red-curry.jpg" alt="" class="menu_img">
-                    <h3 class="menu_name">Thai Red-Curry with Prawns</h3>
-                    <span class="menu_detail"> A featuring of the perfect balance of coconut milk, lemongrass, and red
-                        chili.
-                        Each bite offers a delightful harmony of sweetness and spice, accompanied by the fragrant
-                        essence of Thai basil. Paired with jasmine rice, this dish promises a simple yet sophisticated
-                        taste of authentic Thai cuisine.</span>
-                    <span class="menu_price">$19.99</span>
+                    <div class="menu_box">
+                        <h3 class="menu_name">Thai Red-Curry with Prawns</h3>
+                        <span class="menu_detail"> A featuring of the perfect balance of coconut milk, lemongrass, and
+                            red
+                            chili.
+                            Each bite offers a delightful harmony of sweetness and spice, accompanied by the fragrant
+                            essence of Thai basil. Paired with jasmine rice, this dish promises a simple yet
+                            sophisticated
+                            taste of authentic Thai cuisine.</span>
+                        <span class="menu_price">$19.99</span>
+                    </div>
                     <a href="#" class="button menu_button">
                         <!-- <i class="bx bx-cart-alt"> -->
                         <i class="fa-solid fa-bag-shopping"></i>
@@ -186,8 +256,8 @@
         </section>
 
         <!-- contact us section starting here  -->
-        <section class="contact section bd-container" id="contact">
-            <div class="contact_container bd-grid">
+        <section class="contact " id="contact">
+            <div class="contact_container section bd-container bd-grid">
                 <div class="contact_data">
                     <span class="section-subtitle contact_initial">
                         We'd love to hear from you!
@@ -237,51 +307,52 @@
     </main>
 
     <!-- footer  -->
-    <footer class="footer section bd-container">
+    <footer>
         <div class="footer_container bd-grid">
             <div class="footer_content">
-                <a href="#" class="footer_logo">Street Thai</a>
-                <span class="footer_description">Restaurant</span>
+                <div class="f_logo">
+                    <a href="#" class="footer_logo">Street Thai</a> <br>
+                    <a href="#" class="footer_social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="footer_social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer_social"><i class="fa-brands fa-twitter"></i></a>
+                </div>
             </div>
-            <a href="#" class="footer_social"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="footer_social"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="footer_social"><i class="fa-brands fa-twitter"></i></a>
+            <div class="footer_content">
+                <h3 class="footer_title">Services</h3>
+                <ul>
+                    <li><a href="#" class="footer_link">Menu</a></li>
+                    <li><a href="#" class="footer_link">Delivery</a></li>
+                    <li><a href="#" class="footer_link">Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">
+                    Information
+                </h3>
+                <ul>
+                    <li><a href="#" class="footer_link">Event</a></li>
+                    <li><a href="#" class="footer_link">Contact us</a></li>
+                    <li><a href="#" class="footer_link">Privacy & Policy</a></li>
+                    <li><a href="#" class="footer_link">Terms of services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_content">
+                <h3 class="footer_title">Address</h3>
+                <ul>
+                    <li>anywhere - in the world</li>
+                    <li>Street Address, City, Country, 88888]</li>
+                    <li>Online: reservation/delivery order www.Street-Thai-Restaurant.com</li>
+                    <li>call us at 999-999-9999</li>
+                    <li>@streetthairestaurant@email.com</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer_content">
-            <h3 class="footer_title">Services</h3>
-            <ul>
-                <li><a href="#" class="footer_link">Menu</a></li>
-                <li><a href="#" class="footer_link">Delivery</a></li>
-                <li><a href="#" class="footer_link">Reservation</a></li>
-            </ul>
+        <div class="footer_copy">
+            <p class="">&#169; 2023 minimomo. All right reserved</p>
         </div>
-
-        <div class="footer_content">
-            <h3 class="footer_title">
-                Information
-            </h3>
-            <ul>
-                <li><a href="#" class="footer_link">Event</a></li>
-                <li><a href="#" class="footer_link">Contact us</a></li>
-                <li><a href="#" class="footer_link">Privacy & Policy</a></li>
-                <li><a href="#" class="footer_link">Terms of services</a></li>
-            </ul>
         </div>
-
-        <div class="footer_content">
-            <h3 class="footer_title">Address</h3>
-            <ul>
-                <li>anywhere - in the world</li>
-                <li>Street Address, City, Country, 88888]</li>
-                <li>Online: reservation/delivery order www.Street-Thai-Restaurant.com</li>
-                <li>call us at 999-999-9999</li>
-                <li>@streetthairestaurant@email.com</li>
-            </ul>
-        </div>
-
-        <p class="footer_copy">&#169; 2023 minimomo. All right reserved</p>
-
     </footer>
 
     <script src="./assets/js/app.js"></script>
