@@ -4,7 +4,9 @@ Demo link: https://minimomo14.github.io/street-thai-restaurant/
 
 Demo video: 
 
-"C:\Users\minim\Downloads\momo-1.0.0\ST Demo.mp4"
+
+https://github.com/minimomo14/street-thai-restaurant/assets/93943633/20ab22c1-b81f-4eb8-8fde-07a5495897ed
+
 
 
 Street-Thai Restaurant Website: 
